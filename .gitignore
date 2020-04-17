@@ -1,0 +1,7 @@
+/.idea/
+/bin/
+/doc/
+/vendor/
+/composer.lock
+/test/report/
+/test/coverage.xml
