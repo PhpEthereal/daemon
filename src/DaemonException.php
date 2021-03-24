@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Ethereal\Daemon;
+namespace Plaisio\Daemon;
 
 use SetBased\Exception\RuntimeException;
 

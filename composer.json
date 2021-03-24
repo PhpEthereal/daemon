@@ -1,8 +1,8 @@
 {
-  "name": "ethereal/daemon",
-  "description": "PhpEthereal: Daemon",
+  "name": "plaisio/daemon",
+  "description": "PhpPlaisio: Daemon",
   "keywords": [
-    "PhpEthereal",
+    "PhpPlaisio",
     "daemon"
   ],
   "license": "MIT",
@@ -20,12 +20,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Ethereal\\Daemon\\": "src/"
+      "Plaisio\\Daemon\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ethereal\\Daemon\\Test\\": "test/"
+      "Plaisio\\Daemon\\Test\\": "test/"
     }
   },
   "config": {

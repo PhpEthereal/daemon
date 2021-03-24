@@ -1,4 +1,4 @@
-<project name="PhpEthereal: Daemon" default="build" basedir=".">
+<project name="PhpPlaisio: Daemon" default="build" basedir=".">
     <!-- Run composer update and executes various other updates -->
     <target name="update">
         <exec command="composer update" checkreturn="true" passthru="true"/>
