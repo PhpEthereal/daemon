@@ -7,16 +7,16 @@
   ],
   "license": "MIT",
   "require": {
-    "php": ">=7.3",
+    "php": ">=7.4",
     "ext-pcntl": "*",
     "ext-posix": "*",
     "ext-posix_addendum": "*",
-    "setbased/exception": "^2.1",
-    "setbased/helper-cast": "^2.1"
+    "setbased/exception": "^2.2.0",
+    "setbased/helper-cast": "^2.1.1"
   },
   "require-dev": {
-    "phing/phing": "^2.0",
-    "phpunit/phpunit": "^9.0"
+    "phing/phing": "^2.16.4",
+    "phpunit/phpunit": "^9.5.4"
   },
   "autoload": {
     "psr-4": {
