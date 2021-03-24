@@ -367,7 +367,9 @@ class DaemonContext
         $success = posix_initgroups($user['name'], $this->gid);
         if ($success!==true)
         {
-          throw new DaemonException('Sets groups access list of the current process in accordance to user information in /etc/groups, %s, %d', $user['name'], $this->gid);
+          throw new DaemonException('Unable to set groups access list of the current process, user: %s, GID: %d',
+                                    $user['name'],
+                                    $this->gid);
         }
       }
       else
@@ -461,10 +463,7 @@ class DaemonContext
     }
     catch (\Throwable $exception)
     {
-      throw new DaemonException([$exception],
-                                "%s: %s",
-                                $message,
-                                $exception->getMessage());
+      throw new DaemonException([$exception], "%s: %s", $message, $exception->getMessage());
     }
   }
 
