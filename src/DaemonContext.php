@@ -19,14 +19,14 @@ class DaemonContext
    *
    * @var bool
    */
-  private $detachProcess;
+  private bool $detachProcess;
 
   /**
    * The target GID for the daemon process.
    *
    * @var int
    */
-  private $gid;
+  private int $gid;
 
   /**
    * If `initgroups` is true, the supplementary groups of the process are also initialised, with those corresponding
@@ -34,77 +34,77 @@ class DaemonContext
    *
    * @var bool
    */
-  private $initGroups = false;
+  private bool $initGroups = false;
 
   /**
    * True if and only if this process is a daemon.
    *
    * @var bool
    */
-  private $isDaemon = false;
+  private bool $isDaemon = false;
 
   /**
    * The file access creation mask.
    *
    * @var int|null
    */
-  private $mask;
+  private ?int $mask = null;
 
   /**
    * The PID lock file.
    *
    * @var PidLockFile|null
    */
-  private $pidLockFile;
+  private ?PidLockFile $pidLockFile = null;
 
   /**
    * The effective root directory.
    *
    * @var string|null
    */
-  private $rootDirectory;
+  private ?string $rootDirectory = null;
 
   /**
    * The signal handlers to be installed. Map from signal number ot callable.
    *
    * @var array<int,callable>
    */
-  private $signalHandlers;
+  private array $signalHandlers;
 
   /**
    * The stream to redirect STDERR to.
    *
    * @var Resource|int|null
    */
-  private $stderr;
+  private $stderr = null;
 
   /**
    * The stream to redirect STDIN from.
    *
    * @var Resource|int|null
    */
-  private $stdin;
+  private $stdin = null;
 
   /**
    * The stream to redirect STDOUT to.
    *
    * @var Resource|int|null
    */
-  private $stdout;
+  private $stdout = null;
 
   /**
    * The target UID for the daemon process.
    *
    * @var int
    */
-  private $uid;
+  private int $uid;
 
   /**
    * The working directory.
    *
    * @var string
    */
-  private $workingDirectory = '/';
+  private string $workingDirectory = '/';
 
   //--------------------------------------------------------------------------------------------------------------------
   /**

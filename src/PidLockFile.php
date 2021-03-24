@@ -19,14 +19,14 @@ class PidLockFile
    *
    * @var string
    */
-  private $path;
+  private string $path;
 
   /**
    * The timeout for acquiring the lock file.
    *
    * @var int|null
    */
-  private $timeout;
+  private ?int $timeout;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -66,8 +66,6 @@ class PidLockFile
       // Sleep for 0.1 second.
       usleep(100000);
     }
-
-    return false;
   }
 
   //--------------------------------------------------------------------------------------------------------------------
